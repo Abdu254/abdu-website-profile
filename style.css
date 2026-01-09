@@ -1,0 +1,79 @@
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/334/919/small/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+button {
+    border: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(0, 128, 0, 0.664);
+    font-weight: 600;
+    color: white;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 10ms;
+    background-color: aqua;
+    color: blue;
+    cursor: pointer;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    border: 20px;
+}
+.box1 img{
+    border-radius: 25px;
+    height: 100vh;
+}
+.box2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.364);
+    border-radius: 10px;
+    gap: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+.card img {
+    width: 70px;
+}
+.card button {
+    margin-right: 50px;
+}
+
+@media (max-width: 425px) {
+    .box1 {
+        max-width: 425px;
+    }
+    .box1 img {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+    .box2 {
+        width: 425px;
+        margin: auto;
+    }
+    button {
+        width: 200px;
+    }
+}
